@@ -182,6 +182,11 @@ body{padding-left:250px}
 .pnl{background:var(--bg);border:1px solid var(--line);border-left:5px solid var(--red);border-radius:6px;padding:18px;min-height:220px}
 .pnl .num{margin:4px 0}
 .pnl .help911{font-weight:700;color:var(--red)}
+.team{margin:24px 0 4px;padding:16px 18px;border:1px solid #ffffff40;border-left:5px solid var(--gold);border-radius:8px;background:#ffffff14;max-width:620px}
+.team .lb{font-size:.8rem;letter-spacing:.08em;text-transform:uppercase;color:var(--gold);font-weight:700;margin:0 0 12px}
+.team ul{list-style:none;margin:0;padding:0;display:grid;gap:12px;grid-template-columns:repeat(auto-fit,minmax(150px,1fr))}
+.team li{display:flex;align-items:center;gap:10px;font-weight:500;line-height:1.25;color:#fff}
+.team li b{flex:none;width:40px;height:40px;border-radius:50%;background:var(--gold);color:#0a2463;display:flex;align-items:center;justify-content:center;font-size:.9rem}
 </style>
 </head>
 <body>
@@ -197,6 +202,7 @@ body{padding-left:250px}
 <div class="wrap">
 <div class="txt"><span class="badge">Geografía Física y Humana III · Situación de la mujer</span><h1>Proteger la vida de las mujeres es tarea de todo el Paraguay</h1>
 <p>Datos oficiales, causas, consecuencias y herramientas para reconocer la violencia y pedir ayuda a tiempo.</p>
+<div class="team" role="group" aria-label="Integrantes del trabajo"><div class="lb">Trabajo realizado por</div><ul><li><b aria-hidden="true">TC</b>Tobias Cabrera</li><li><b aria-hidden="true">GM</b>Gonzalo Martinez</li><li><b aria-hidden="true">DL</b>Diana Lopez</li><li><b aria-hidden="true">SM</b>Stella Maris</li></ul></div>
 <a class="btn red" href="#ayuda">Necesito ayuda ahora</a><a class="btn" href="#datos">Ver los datos</a><ul class="chips"><li><b>17</b><span>feminicidios en 2026 (al 10/08, preliminar)</span></li><li><b>37</b><span>mujeres asesinadas en 2025</span></li><li><b>137</b><span>SOS Mujer, 24 h y gratis</span></li></ul></div>
 <svg class="art" viewBox="0 0 320 330" role="img" aria-label="Ilustración de tres mujeres de distintas edades, unidas, frente a un sol dorado"><circle cx="160" cy="150" r="135" fill="#f2b705" opacity=".2"/><circle cx="160" cy="150" r="108" fill="none" stroke="#f2b705" stroke-width="2" stroke-dasharray="3 7"/><circle cx="160" cy="150" r="82" fill="none" stroke="#f2b705" stroke-width="1" opacity=".6"/><circle cx="96" cy="176" r="17" fill="#c98a5e"/><path d="M78 168a18 18 0 0 1 36 0q-8-9-18-9t-18 9z" fill="#2a1a10"/><path d="M66 300q0-100 30-108 30 8 30 108z" fill="#fff"/><circle cx="226" cy="166" r="19" fill="#e0a77c"/><path d="M206 160a20 20 0 0 1 40 0q-8-12-20-12t-20 12z" fill="#e8e8ee"/><path d="M192 300q0-104 34-112 34 8 34 112z" fill="#0038a8"/><circle cx="160" cy="118" r="25" fill="#a8683f"/><path d="M135 120a25 25 0 0 1 50 0q-8-17-25-17t-25 17z" fill="#1c1208"/><path d="M112 300q0-146 48-156 48 10 48 156z" fill="#d52b1e"/><path d="M128 190q32 18 64 0" fill="none" stroke="#f2b705" stroke-width="3"/><rect x="40" y="300" width="80" height="8" fill="#d52b1e"/><rect x="120" y="300" width="80" height="8" fill="#fff"/><rect x="200" y="300" width="80" height="8" fill="#0038a8"/></svg>
 </div>
@@ -364,7 +370,7 @@ body{padding-left:250px}
 <p class="note" style="margin-top:16px"><strong>Cómo leer el mapa:</strong> los casos por departamento corresponden al reporte del Ministerio Público del 27/07/2026 (14 víctimas), publicado por ABC Color. El reporte del 10/08 sube el total a 17, pero no se encontró su distribución por departamento. Las cifras no miden el riesgo por sí solas: Central y Asunción concentran gran parte de la población, por lo que conviene comparar con la densidad poblacional. Servicios: Ministerio de la Mujer y Agencia IP (03/01/2024); otras fuentes mencionan más centros regionales, por lo que conviene confirmar con el 137. La división Región Oriental y Occidental (Chaco) es geográfica.</p>
 </div></section>
 </main>
-<footer><div class="wrap">Trabajo práctico · Geografía Física y Humana III · Docente: Lic. Adán Fernández. Si estás en peligro, llamá al 911 o al 137.</div></footer>
+<footer><div class="wrap">Trabajo práctico · Geografía Física y Humana III · Docente: Lic. Adán Fernández.<br>Integrantes: Tobias Cabrera, Gonzalo Martinez, Diana Lopez y Stella Maris. Si estás en peligro, llamá al 911 o al 137.</div></footer>
 <script>document.querySelectorAll('.pg').forEach(function(e){var n=+e.dataset.n,s='';for(var i=0;i<n;i++)s+='<svg aria-hidden="true"><use href="#i-person"/></svg>';e.innerHTML=s;});</script>
 <script>var L=[].slice.call(document.querySelectorAll("nav a"));var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){L.forEach(function(l){var on=l.getAttribute("href")==="#"+e.target.id;l.classList.toggle("on",on);if(on&&getComputedStyle(l.parentNode).position==="sticky"){l.parentNode.scrollTo({left:l.offsetLeft-24,behavior:"smooth"})}})}})},{rootMargin:"-30% 0px -60% 0px"});document.querySelectorAll("header[id],section[id]").forEach(function(x){io.observe(x)});</script>
 <script>(function(){var b=document.body,m=document.getElementById("mb");function t(o){b.classList.toggle("open",o);m.setAttribute("aria-expanded",o);m.setAttribute("aria-label",o?"Cerrar menú":"Abrir menú de secciones")}m.onclick=function(){t(!b.classList.contains("open"))};document.getElementById("sc").onclick=function(){t(false)};document.querySelectorAll("nav a").forEach(function(a){a.addEventListener("click",function(){t(false)})});document.addEventListener("keydown",function(e){if(e.key==="Escape")t(false)})})();</script>
